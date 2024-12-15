@@ -1,0 +1,21 @@
+db:
+  host: "localhost"
+  port: "5432"
+  username: "postgres"
+  sslmode: "disable"
+  database: "email_verification"
+
+http_server:
+  addr: "8080"
+  read_timeout: "10s"
+  write_timeout: "10s"
+  idle_timeout: "1m"
+
+logger:
+  level: "debug"
+  file_path: "/log/log.log"
+
+smtp_server:
+  host: "smtp.gmail.com"
+  port: "587"
+  from: "bevvrst@gmail.com"
